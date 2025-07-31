@@ -1,3 +1,11 @@
+function largest(arr) {
+    return arr.reduce((largest, current) =>
+        (current > largest ? current : largest), arr[0]);
+}
+
+let num1 = [10, 15, 38, 70, 13];
+console.log(largest(num1));
+
 
 const multiply = function (a, b) 
 {return a * b};
