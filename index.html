@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p id="demo">Hello, World! ;0</p>
-    <h1 id="intro">Introduction to DOM</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="contain">
+    <h1>Budget Tracker</h1>
 
-    <script>
-      let element = document.getElementById("demo");
-      console.log(element.innerText);
-    </script>
+    <div class="balance">
+      <h2>Balance: <span id="balance">$0.00</span></h2>
+    </div>
 
-  </body>
+    <div class="summm">
+      <div class="income">
+        <h3>Income</h3>
+        <p id="income">$0.00</p>
+      </div>
+      <div class="expense">
+        <h3>Expenses</h3>
+        <p id="expense">$0.00</p>
+      </div>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="text" placeholder="Enter description" required>
+      <input type="number" id="amount" placeholder="Enter amount" required>
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <ul id="transaction-list">
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
