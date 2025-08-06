@@ -49,13 +49,7 @@ button {
   border-radius: 4px;
 }
 
-.income {
-  background-color: #e0ffe0;
-}
 
-.expense {
-  background-color: #ffe0e0;
-}
 
 #transaction-list {
   list-style-type: none;
